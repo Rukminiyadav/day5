@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //...=>spread operator
+       const numbers=[1,2,3]
+        
+        console.log(numbers.join(" "))
+        console.log(...numbers)
+
+        //function
+        function sum(x,y,z){
+            console.log(x+y+z)
+        }
+        sum(...numbers)
+
+        //rest operators//parameters
+        function func(a,b){
+            console.log(a,b)
+        }
+        func(3,4)
+
+        function func(a,b,...rest){
+            console.log(a,b)
+            console.log(rest)
+        }
+        func(3,4,5,45,87,90)
+
+        function func(a,b,...rest){
+            console.log(a,b)
+            sum=a+b;
+            console.log(rest)
+            for(var i=0;i<=rest.length;i++){
+
+            }
+            console.log(sum)
+        }
+        func(3,4)
+
+    </script>
+</body>
+</html>
